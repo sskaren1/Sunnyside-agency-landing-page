@@ -32,8 +32,8 @@ Add a screenshot of my solution.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sskaren1/Testimonials-grid-section.git)
-- Live Site URL: [Add live site URL here](https://sskaren1.github.io/Testimonials-grid-section/)
+- Solution URL: [Add solution URL here](https://github.com/sskaren1/Sunnyside-agency-landing-page.git)
+- Live Site URL: [Add live site URL here](https://sskaren1.github.io/Sunnyside-agency-landing-page/)
 
 ## My process
 
