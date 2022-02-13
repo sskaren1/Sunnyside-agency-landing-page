@@ -1,0 +1,30 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.banner {
+    background-image: url("../img/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 48vh;
+    @include m.tablet{
+        height: 65vh;
+    }
+    @include m.desktop{
+        height: 78vh;
+    }
+}
+  
+.banner__container {
+    text-align: center;
+    h1 {
+        color: c.$main-title;
+        text-transform: uppercase;
+        margin-bottom: 4.5rem;
+        letter-spacing: 1rem;  
+    }
+    img {
+        height: 9rem;
+    } 
+}

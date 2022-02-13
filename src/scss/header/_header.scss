@@ -1,0 +1,47 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.header {
+  background-color: rgb(64, 191, 255);
+  height: auto;
+}
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  padding: v.$padding_div 0 calc(v.$padding_div*2);
+}
+.nav{
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+      &:hover{
+        color: c.$neutral-2;
+      }
+    }
+  }
+  .nav-list__item {
+    margin-right: v.$margin_elemt;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.nav--header{
+  display: none;
+  @include m.tablet{
+    display: flex;
+  }
+}
+.icon-hamburguer {
+  display: flex;
+  cursor: pointer;
+  @include m.tablet{
+    display: none;
+  }
+}
+
+
+

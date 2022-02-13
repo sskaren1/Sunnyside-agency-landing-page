@@ -1,0 +1,44 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.footer {
+  background-color: rgb(151, 214, 199);
+}
+.footer__container {
+  padding: v.$padding_div 0 calc(v.$padding_div*2);
+  .logo {
+    margin-bottom: calc(v.$margin_elemt * 2);
+  }
+  .follow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .follow__item {
+      margin-right: v.$margin_elemt;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.nav--footer {
+  margin-bottom: calc(v.$margin_elemt * 4);
+  a {
+    font-family: v.$secondary-font;
+    font-weight: v.$semi-bold;
+    color: c.$color-5;
+  }
+}
+
+.footer__attribution {
+  p {
+    color: c.$color-3;
+    text-align: center;
+    a {
+      font-family: v.$secondary-font;
+      color: c.$color-5;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/colours' as c;
+@use 'base/mixins' as m;
+
+// .degraded-text{
+//     color: transparent;  
+//     background: linear-gradient(to right, c.$degraded1 0%, c.$degraded2 100%);
+//     -webkit-background-clip: text;
+//     background-clip: text;
+// }
+.shadow-background{
+    background-color: c.$shadow;  
+}

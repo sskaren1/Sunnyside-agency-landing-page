@@ -1,0 +1,35 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.btn {
+  margin: 1rem 0 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  @include m.telefono {
+    padding: 0.6rem 2rem;
+  }
+  @include m.tablet {
+    padding: 0.6rem 3rem;
+    margin: 0;
+  }
+}
+
+.btn--contact {
+  background-color: hsl(0, 0%, 100%);
+  color: c.$color-6;
+  font-weight: v.$semi-bold;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  padding: 1.5rem 2.5rem;
+  margin-right: 0;
+  &:hover {
+    background-color: rgb(116, 209, 255);
+    color: c.$neutral-2;
+  }
+}
